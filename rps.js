@@ -28,6 +28,8 @@ do {
 while (i < 3);
 
 
+// function called onClick
+
 function play(playerChoice) {
     let rand = Math.floor(Math.random() * 3);
     const heading = document.getElementById("rps-heading");
@@ -35,6 +37,7 @@ function play(playerChoice) {
 
     let index;
 
+    // these are to choose the correct picture to diplay for the player
     if (playerChoice == "rock") {
         index = 0;
     }
@@ -48,12 +51,14 @@ function play(playerChoice) {
     }
 
 
+    // clear the two images (if there) and then append the player image and computer image
     removeChildFromBottom("#rps-container")
     removeChildFromBottom("#rps-container")
     appendElement("#rps-container", player_rps[index]);
     appendElement("#rps-container", comp_rps[rand]);
 
 
+    // switch to decide winners losers and draws
     switch (playerChoice) {
 
         case "rock":
@@ -118,18 +123,19 @@ function play(playerChoice) {
             }
             break;
     }
-
+    // displays the score and highest streak
     scoreboard.innerHTML = `Score: ${score}   Streak: ${streak}`;
 }
 
 
-
+// function appends images to the screen inside the div
 function appendElement(id, img) {
     let newElement = document.createElement("SPAN");
     newElement.innerHTML = "<img src='" + img + "'></img>";
     document.querySelector(id).appendChild(newElement);
 }
 
+// function removes images inside the div ( if there)
 function removeChildFromBottom(id) {
     let parent = document.querySelector(id);
     let child = parent.lastChild;
