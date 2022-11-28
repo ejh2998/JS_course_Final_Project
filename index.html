@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Evan Hope - ITP-140 -- Fall 2022 -->
+  <!-- all clip art images were found in the free for non-commercial use section of pixabay.com and seeklogo.com -->
+  <!-- all icons were found in the free for non-commercial use area of fontawesome.com  -->
+  <!-- all fonts were imported from google fonts -->
+  <!-- UI was built using the Bootstrap 5.2 CSS/HTML/JS framework -->
+  <meta charset="utf-8">
+  <title>Evan Hope - Full-Stack Developer</title>
+  <!-- bootstrap framework-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- Google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rubik:ital,wght@1,500&family=Sacramento&family=Ubuntu+Mono&display=swap"
+    rel="stylesheet">
+  <!-- styles.css file-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- font awesome cdn import-->
+  <script src="https://kit.fontawesome.com/663106be32.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- scalable bootstrap navbar and branding -->
+
+<body>
+  <section id="title">
+    <div class="container-fluid" <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">evan hope</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Modify The DOM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="p5.html">Draw!</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Leetcode and GitHub buttons & main heading -->
+      <div class="row left-main">
+        <div class="col-lg-6">
+          <h1>Aspiring Developer <i class="fa-brands fa-codepen"></i></h1>
+          <a type="button" class="btn btn-dark btn-lg download-button" href="https://github.com/ejh2998"> <i
+              class="fa-brands fa-github"></i>
+            My GitHub Page</a>
+          <a type="button" class="btn btn-outline-light btn-lg download-button" href="https://leetcode.com/Ejh2998/"><i
+              class="fa-solid fa-code"></i>
+            My LeetCode Profile</a>
+        </div>
+
+        <!-- dual-screens image -->
+        <div class="col-lg-6">
+          <img class="title-image" id="title-image" src="images/dual-screen-gacfc9cbf2_640.png"
+            alt="dual-screens-clipart">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features section (languages I have learned) -->
+  <section id="features">
+    <div class="row features-heading">
+      <h2>I have experience with:</h2>
+    </div>
+    <div class="row">
+      <div class="features-container col-lg-2">
+        <a href="https://go.dev/doc/"><i class="fa-brands fa-golang fa-4x icons-bar"></i></a>
+        <h3>Go</h3>
+      </div>
+      <div class="features-container col-lg-2">
+        <a href="https://docs.python.org/3/"><i class="fa-brands fa-python fa-4x icons-bar"></i></a>
+        <h3>Python</h3>
+        </p>
+      </div>
+      <div class="features-container col-lg-2">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i
+            class="fa-brands fa-square-js fa-4x icons-bar"></i></a>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="features-container col-lg-2">
+        <a href="https://docs.oracle.com/en/java/"><i class="fa-brands fa-java fa-4x icons-bar"></i></a>
+        <h3>Java</h3>
+      </div>
+      <div class="features-container col-lg-2">
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"><i
+            class="fa-brands fa-html5 fa-4x icons-bar"></i></a>
+        <h3>HTML 5</h3>
+      </div>
+      <div class="features-container col-lg-2">
+        <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"><i
+            class="fa-brands fa-bootstrap fa-4x icons-bar"></i></a>
+        <h3>Bootstrap</h3>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Carousel-->
+  <section id="bs-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>Comfortable utilizing Docker for containerization and deployment</h2>
+          <img class="test-image" src="images/docker-logo-6D6F987702-seeklogo.com.png" alt="docker-profile">
+
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Began working with AWS and Kubernetes for serverless application deployment</h2>
+          <img class="test-image" src="images/kubernetes-logo-3A67038EAB-seeklogo.com.png" alt="kubernetes-profile">
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Completed 36 Udemy courses on development in my spare time.</h2>
+          <img class="test-image" src="images/udemy-wordmark-logo-5BA74BCA61-seeklogo.com.png" alt="udemy-profile">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- Call to action section -->
+  <section id="cta">
+    <h3>Check out my portfolio today</h3>
+    <a type="button" class="btn btn-dark btn-lg download-button" href="https://github.com/ejh2998"> <i
+        class="fa-brands fa-github"></i>
+      My GitHub Page</a>
+    <a type="button" class="btn btn-outline-light btn-lg download-button" href="https://leetcode.com/Ejh2998/"><i
+        class="fa-solid fa-code"></i>
+      My LeetCode Profile</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer1">
+    <p>© Copyright Evan Hope - 2022</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

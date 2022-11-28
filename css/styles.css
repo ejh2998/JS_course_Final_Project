@@ -1,0 +1,210 @@
+h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    color: white;
+}
+
+.h1-sign {
+    font-family: Ubuntu, monospace;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.h3-sign {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.clear-draw {
+    text-align: center;
+}
+
+h3 {
+    font-family: "Amatic SC", cursive;
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.container-fluid {
+    padding: 3% 15%
+}
+
+body {
+    background-color: #F05454;
+}
+
+
+#title {
+    background-color: #214252;
+}
+
+#title a {
+    color: white;
+}
+
+#title-image {
+    width: 90%;
+    margin-left: 12%;
+    margin-bottom: 12%;
+    border-radius: 4%;
+}
+
+/* nav bar stuff */
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+/* brand name */
+
+.navbar-brand {
+    font-family: "ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 2.5rem;
+    font-family: 'Amatic SC', cursive;
+    ;
+}
+
+/* buttons */
+
+.download-button {
+    margin: 5% 3% 5% 0%;
+}
+
+/* features area  */
+
+#features {
+    padding: 8% 17%;
+    background-color: #F05454;
+    color: white;
+}
+
+.features-container {
+    padding: 1%;
+    text-align: center;
+}
+
+.icons-bar {
+    color: #f4edee;
+    margin-bottom: 1.2rem;
+}
+
+.icons-bar:hover {
+    color: #214252;
+}
+
+#bs-carousel {
+
+    text-align: center;
+    background-color: #214252;
+    color: white;
+
+}
+
+.test-image {
+    width: 14%;
+    margin: 18px;
+
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+
+#press {
+    background-color: white;
+    text-align: center;
+    /* padding-bottom: 3%; */
+
+}
+
+.press-logos {
+    width: 85%;
+    /* margin: 20px 20px 30px; */
+    /* padding-top: 55px; */
+}
+
+.example-h3 {
+    color: white;
+}
+
+.example-divs {
+
+    margin: 55px;
+}
+
+
+#cta {
+    text-align: center;
+    margin-top: .5rem;
+    background-color: #F05454;
+    color: white;
+}
+
+#footer1 {
+    text-align: center;
+    background-color: #F05454;
+    color: white;
+
+}
+
+
+.features-heading {
+    text-align: center;
+    padding: 1rem;
+}
+
+.features-container {
+    margin: auto;
+}
+
+
+#documentations {
+    text-align: center;
+    padding-top: 40px;
+    font-family: "ubuntu", monospace;
+}
+
+.jumbotron {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#game-controls {
+    margin: auto;
+    text-align: center;
+}
+
+#rps-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#scoreboard {
+    text-align: center;
+    color: white;
+}
+
+#sketch-holder {
+    text-align: center;
+}
