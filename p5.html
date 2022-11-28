@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P5.js Chalkboard</title>
 
+    <!-- jquery import from cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 
     <!-- bootstrap import  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -59,17 +62,37 @@
                 </div>
             </nav>
 
+            <!-- drawing canvas -->
             <h1 class="h3-sign">Digital Chalkboard</h1>
             <div id="sketch-holder">
+
                 <!-- sketch will go here -->
             </div>
+
+            <!-- clear drawing button -->
             <div class="clear-draw">
+
                 <a type="button" class="btn btn-outline-light btn-lg download-button" onclick="setup()"><i
                         class="fa-solid fa-code"></i>
                     Clear Drawing</a>
             </div>
 
+            <!-- choose colors and stroke weight inputs -->
+            <div id="color-pick">
+                <label for="favcolor">Choose pen color:</label>
+                <br>
+                <br>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                <br>
+                <br>
+                <label for="favcolor">Choose pen weight:</label>
+                <br>
+                <br>
+                <input type="range" min="1" max="10" value="50" class="slider" id="myRange">
+            </div>
 
+
+            <!-- import for p5.js library -->
             <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
             <script src="sketch.js"></script>
 </body>

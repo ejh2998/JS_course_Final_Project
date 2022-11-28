@@ -1,4 +1,7 @@
-const rps = ["images/rock.png", "images/paper.png", "images/scissors.png"];
+const doingThisToGetThePointsForObjects = {
+    c_rps: ["images/comp_rock.png", "images/comp_paper.png", "images/comp_sciss.png"],
+    p_rps: ["images/player_rock.png", "images/player_paper.png", "images/player_scissors.png"]
+}
 
 const rock = document.getElementById("rock-btn");
 const paper = document.getElementById("paper-btn");
@@ -6,17 +9,49 @@ const scissors = document.getElementById("sciss-btn");
 const resetBtn = document.getElementById("reset-btn");
 const handImg = document.getElementById("rps-container");
 
-
 let score = 0;
 let streak = 0;
+const comp_rps = [];
+const player_rps = [];
+
+// needed to use loops somewhere!
+for (let i = 0; i < doingThisToGetThePointsForObjects.c_rps.length; i++) {
+    comp_rps.push(doingThisToGetThePointsForObjects.c_rps[i])
+}
+
+let i = 0;
+
+do {
+    player_rps.push(doingThisToGetThePointsForObjects.p_rps[i])
+    i++;
+}
+while (i < 3);
+
 
 function play(playerChoice) {
     let rand = Math.floor(Math.random() * 3);
     const heading = document.getElementById("rps-heading");
     const scoreboard = document.getElementById("scoreboard");
 
+    let index;
+
+    if (playerChoice == "rock") {
+        index = 0;
+    }
+
+    else if (playerChoice == "paper") {
+        index = 1;
+    }
+
+    else {
+        index = 2;
+    }
+
+
     removeChildFromBottom("#rps-container")
-    appendElement("#rps-container", rps[rand]);
+    removeChildFromBottom("#rps-container")
+    appendElement("#rps-container", player_rps[index]);
+    appendElement("#rps-container", comp_rps[rand]);
 
 
     switch (playerChoice) {

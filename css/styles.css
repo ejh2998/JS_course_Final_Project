@@ -208,3 +208,11 @@ body {
 #sketch-holder {
     text-align: center;
 }
+
+#color-pick {
+    color: rgb(0, 0, 0);
+    font-family: ubuntu;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+
+}

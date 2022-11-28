@@ -9,7 +9,8 @@ function windowResized() {
 }
 
 function draw() {
-    stroke(600);
+    stroke($("#favcolor").val());
+    strokeWeight($("#myRange").val());
     if (mouseIsPressed === true) {
         line(mouseX, mouseY, pmouseX, pmouseY);
     }
