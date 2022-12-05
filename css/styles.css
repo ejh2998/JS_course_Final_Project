@@ -216,3 +216,8 @@ body {
     background-color: rgb(255, 255, 255);
 
 }
+
+#toolbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
