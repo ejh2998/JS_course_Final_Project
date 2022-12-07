@@ -34,13 +34,13 @@ function draw() {
         }
     } else if (currentTool === "eraser") {
         if (mouseIsPressed === true) {
-            stroke(255, 255, 255);
+            stroke(0, 0, 0);
             line(mouseX, mouseY, pmouseX, pmouseY);
         }
     } else if (currentTool === "line") {
         if (mouseIsPressed === true) {
             stroke($("#favcolor").val());
-            line(mouseX, mouseY, pmouseX, pmouseY);
+            line(mouseX, mouseY, mouseX, mouseY);
         }
     } else if (currentTool === "rectangle") {
         if (mouseIsPressed === true) {
