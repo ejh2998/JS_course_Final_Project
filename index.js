@@ -42,29 +42,10 @@ function removeChildFromBottom() {
 }
 
 
-const timeAndDateDiv = document.getElementById("time-and-date");
+const pElement = document.querySelector('footer#footer1 p');
+const currentYear = new Date().getFullYear();
 
-function updateTimeAndDate() {
-    let currentTime = new Date();
-
-    // Format the time and date as a string
-    let timeAndDateString = currentTime.toLocaleString();
-
-    // Use Bootstrap to format the time and date string as a panel
-    let timeAndDateHtml = '<div class="panel panel-default">' +
-        '  <div class="panel-body">' +
-        '    <p>' + timeAndDateString + '</p>' +
-        '  </div>' +
-        '</div>';
-    timeAndDateDiv.innerHTML = timeAndDateHtml;
-}
-
-// Call the updateTimeAndDate function every 1 second (1000 milliseconds)
-setInterval(updateTimeAndDate, 1000);
-
-
-
-
+pElement.innerHTML = `© Copyright Evan Hope - ${currentYear}`;
 
 
 
