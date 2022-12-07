@@ -39,17 +39,17 @@ function draw() {
         }
     } else if (currentTool === "line") {
         if (mouseIsPressed === true) {
-            stroke(0, 0, 0);
+            stroke($("#favcolor").val());
             line(mouseX, mouseY, pmouseX, pmouseY);
         }
     } else if (currentTool === "rectangle") {
         if (mouseIsPressed === true) {
-            stroke(0, 0, 0);
+            stroke($("#favcolor").val());
             rect(mouseX, mouseY, pmouseX, pmouseY);
         }
     } else if (currentTool === "circle") {
         if (mouseIsPressed === true) {
-            stroke(0, 0, 0);
+            stroke($("#favcolor").val());
             ellipse(mouseX, mouseY, pmouseX, pmouseY);
         }
     }
